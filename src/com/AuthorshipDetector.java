@@ -1,10 +1,12 @@
+package com;
+
 import java.io.InputStream;
 
 public interface AuthorshipDetector {
 
     /**
      *
-     * Returns the linguistic signature for the given input stream @mysteryText based on the following features:
+     * Returns the linguistic signature for the given input stream @mysteryText based on the following analyzer.features:
      * 1. Average Word Complexity
      * 2. Type Token Ratio
      * 3. Hapax Legomena Ratio
