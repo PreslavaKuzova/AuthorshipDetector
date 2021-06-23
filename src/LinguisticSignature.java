@@ -1,15 +1,15 @@
-public class LinguisticSignature {
-    private double averageWordLength;
-    private double typeTokenRatio;
-    private double hapaxLegomenaRatio;
-    private double averageSentenceLength;
-    private double averageSentenceComplexity;
+import features.FeatureType;
 
-    public LinguisticSignature(double averageWordLength, double typeTokenRatio, double hapaxLegomenaRatio, double averageSentenceLength, double averageSentenceComplexity) {
-        this.averageWordLength = averageWordLength;
-        this.typeTokenRatio = typeTokenRatio;
-        this.hapaxLegomenaRatio = hapaxLegomenaRatio;
-        this.averageSentenceLength = averageSentenceLength;
-        this.averageSentenceComplexity = averageSentenceComplexity;
+import java.util.Map;
+
+public class LinguisticSignature {
+    private Map<FeatureType, Double> features;
+
+    public LinguisticSignature(Map<FeatureType, Double> features) {
+        this.features = features;
+    }
+
+    public Map<FeatureType, Double> getFeatures() {
+        return features;
     }
 }

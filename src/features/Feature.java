@@ -1,13 +1,17 @@
 package features;
 
+import java.util.List;
+
 public abstract class Feature {
-    protected double weight;
+    protected FeatureType type;
 
-    public double getWeight() {
-        return weight;
+    public Feature(FeatureType type) {
+        this.type = type;
     }
 
-    public void setWeight(double weight) {
-        this.weight = weight;
+    public FeatureType getType() {
+        return type;
     }
+
+    public abstract double calculate(List<String> words, List<String> sentences);
 }

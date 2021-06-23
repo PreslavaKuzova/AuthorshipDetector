@@ -3,8 +3,12 @@ package features;
 import java.util.List;
 
 public class AverageSentenceLengthFeature extends Feature{
+    public AverageSentenceLengthFeature() {
+        super(FeatureType.AVERAGE_SENTENCE_LENGTH);
+    }
 
-    private double calculate(List<String> words, List<String> sentences) {
+    @Override
+    public double calculate(List<String> words, List<String> sentences) {
         return (double) words.size() / sentences.size();
     }
 }
