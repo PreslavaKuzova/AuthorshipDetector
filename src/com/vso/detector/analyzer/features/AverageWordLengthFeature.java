@@ -1,7 +1,4 @@
-package com;
-
-import analyzer.Feature;
-import analyzer.FeatureType;
+package com.vso.detector.analyzer.features;
 
 import java.util.List;
 
@@ -11,7 +8,8 @@ public class AverageWordLengthFeature extends Feature {
         super(FeatureType.AVERAGE_WORD_LENGTH);
     }
 
-    public double calculate(List<String> words) {
+    @Override
+    public double calculate(List<String> words, List<String> sentences) {
         return words
                 .stream()
                 .mapToInt(String::length)

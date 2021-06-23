@@ -1,4 +1,4 @@
-package com;
+package com.vso.detector;
 
 import java.io.InputStream;
 

@@ -1,4 +1,7 @@
-package com;
+package com.vso.detector;
+
+import com.vso.detector.analyzer.features.Feature;
+import com.vso.detector.analyzer.features.FeatureType;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,9 +12,11 @@ public class LinguisticSignatureCalculator {
     public LinguisticSignature calculateSignature(List<String> words, List<String> sentences) {
         Map<FeatureType, Double> signature = new HashMap<>();
 
-//        for (Feature feature : ) {
-//            signature.put(type, )
-//        }
+
+        for (Feature feature : new AllFeatures().getAllFeatures()) {
+            signature.put(feature.getType(),
+                    feature.calculate(words, sentences));
+        }
 
         return new LinguisticSignature(signature);
     }

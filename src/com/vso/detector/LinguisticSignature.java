@@ -1,4 +1,6 @@
-package com;
+package com.vso.detector;
+
+import com.vso.detector.analyzer.features.FeatureType;
 
 import java.util.Map;
 

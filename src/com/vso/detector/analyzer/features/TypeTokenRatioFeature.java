@@ -1,4 +1,4 @@
-package com;
+package com.vso.detector.analyzer.features;
 
 import java.util.List;
 
@@ -8,7 +8,8 @@ public class TypeTokenRatioFeature extends Feature {
         super(FeatureType.TYPE_TOKEN_RATIO);
     }
 
-    public double calculate(List<String> words) {
+    @Override
+    public double calculate(List<String> words, List<String> sentences) {
         return (double) words.stream().distinct().count() / words.size();
     }
 }

@@ -1,4 +1,6 @@
-package com;
+package com.vso.detector;
+
+import com.vso.detector.analyzer.features.*;
 
 public class AllFeatures {
     private final Feature[] features;
@@ -16,5 +18,4 @@ public class AllFeatures {
     Feature[] getAllFeatures() {
         return features;
     }
-
 }

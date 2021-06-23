@@ -1,4 +1,4 @@
-package com;
+package com.vso.detector.analyzer.features;
 
 public enum FeatureType {
     AVERAGE_WORD_LENGTH(11),
