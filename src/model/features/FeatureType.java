@@ -1,4 +1,4 @@
-package features;
+package model.features;
 
 public enum FeatureType {
     AVERAGE_WORD_LENGTH(11),

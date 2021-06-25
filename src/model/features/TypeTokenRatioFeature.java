@@ -1,4 +1,4 @@
-package features;
+package model.features;
 
 import java.util.List;
 

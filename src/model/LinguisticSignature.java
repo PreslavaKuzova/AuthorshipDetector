@@ -1,4 +1,6 @@
-import features.FeatureType;
+package model;
+
+import model.features.FeatureType;
 
 import java.util.Map;
 

@@ -1,5 +1,7 @@
-import features.Feature;
-import features.FeatureType;
+package model;
+
+import model.features.Feature;
+import model.features.FeatureType;
 
 import java.util.HashMap;
 import java.util.List;

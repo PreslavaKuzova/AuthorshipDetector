@@ -1,4 +1,6 @@
-import features.*;
+package model;
+
+import model.features.*;
 
 public class AllFeatures {
     private final Feature[] features;
