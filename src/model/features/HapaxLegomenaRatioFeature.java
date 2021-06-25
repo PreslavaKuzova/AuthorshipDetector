@@ -1,4 +1,4 @@
-package features;
+package model.features;
 
 import java.util.List;
 import java.util.Map;
@@ -6,7 +6,12 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class HapaxLegomenaRatioFeature extends Feature {
-    public double calculate(List<String> words) {
+    public HapaxLegomenaRatioFeature() {
+        super(FeatureType.HAPAX_LEGOMENA_RATIO);
+    }
+
+    @Override
+    public double calculate(List<String> words, List<String> sentences) {
         Map<String, Long> occurrences = words.stream().collect(
                 Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
